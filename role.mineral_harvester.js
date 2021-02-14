@@ -30,7 +30,7 @@ var roleHarvester = {
                     }
                 }
             }
-            if (creep.store[RESOURCE_OXYGEN]==creep.store.getFreeCapacity()) {
+            if (creep.store[RESOURCE_OXYGEN]==creep.store.getCapacity()) {
                 creep.memory.status = 1;
             }
         }

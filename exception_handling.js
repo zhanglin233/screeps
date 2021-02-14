@@ -11,10 +11,11 @@ var roleHarvester = {
     /** @param {Creep} tower **/
     run: function () {
         var myrooms = Game.rooms;
-        for(var room in myrooms){
+        for (var room in myrooms) {
             console.log(room.name);
+
         }
-// vvdsfs
-};
+    }
+}
 
 module.exports = roleHarvester;

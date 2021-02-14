@@ -38,21 +38,21 @@ var link_harvester2_amount = 1;
 var upgrader_amount = 1;
 var upgrader2_amount = 4;
 
-var builder_amount = 2;
-var builder2_amount = 3;
+var builder_amount = 0;
+var builder2_amount = 1;
 
 var con_harvester_amount = 1;
-var con_harvester2_amount = 3;
+var con_harvester2_amount = 4;
 
 var tower_harvester_amount = 1;
 var tower_harvester2_amount = 1;
-var mineral_harvester_amount = 1;
+var mineral_harvester_amount =0;
 var mineral_harvester2_amount = 1;
 
-var out_harvester_amount = 0;
+var out_harvester_amount = 2;
 var out_harvester2_amount = 0;
-var out_withdraw_amount = 0;
-var out_repair_amount = 0;
+var out_withdraw_amount = 3;
+var out_repair_amount = 2;
 
 
 
@@ -298,7 +298,7 @@ module.exports.loop = function () {
         var builder2_newname = 'Builder2' + Game.time;
         //输出新名字
         // console.log(builder_newname)
-        Game.spawns['Spawn2'].spawnCreep([WORK, WORK, WORK, WORK,WORK,WORK,WORK,WORK,WORK,WORK,CARRY, CARRY, CARRY, CARRY, MOVE, MOVE, MOVE,MOVE], builder2_newname,
+        Game.spawns['Spawn2'].spawnCreep([WORK, WORK, WORK, WORK,WORK,CARRY,CARRY,CARRY,CARRY, CARRY, CARRY, CARRY, MOVE,MOVE,MOVE, MOVE, MOVE,MOVE], builder2_newname,
             { memory: { role: 'builder2' } });
     }
     //如果harvester的数量小于6,则自动孵化harvester

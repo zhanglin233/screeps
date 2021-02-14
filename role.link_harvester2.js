@@ -33,7 +33,11 @@ var roleBuilder = {
         }
         else {
             var container = Game.getObjectById('601e3b3fbb78d1bb3b1a9bfa');
-            var resource = creep.room.lookForAt(LOOK_RESOURCES, 42, 37);
+            var resource1 = creep.room.lookForAt(LOOK_RESOURCES, 41, 37);
+            var resource2 = creep.room.lookForAt(LOOK_RESOURCES, 42, 37);
+            if(resource1.length){
+                
+            }
             if (Game.creeps['E43N51_1']) {
                 if (Game.creeps['E43N51_1'].pos.isEqualTo(42, 37)) {
                     if (creep.withdraw(container, RESOURCE_ENERGY) == ERR_NOT_IN_RANGE) {
