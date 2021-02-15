@@ -24,7 +24,7 @@ var roleHarvester = {
             if (creep.carry.energy == 0) {
                 creep.memory.status = 0;
             }
-            var targets = creep.room.find(FIND_STRUCTURES, {
+            var target = creep.pos.findClosestByRange(FIND_STRUCTURES, {
                 filter: (structure) => {
                     return (structure.structureType == STRUCTURE_EXTENSION ||
                         structure.structureType == STRUCTURE_SPAWN) &&

@@ -15,7 +15,7 @@ var roleHarvester = {
             var Hostile_creeps = room.find(FIND_HOSTILE_CREEPS);
             ATTACK_NAME = 'attack' + Game.time;
             if (Hostile_creeps.length&&!Memory.ATTACKstatus) {
-                Game.spawns['ZhangLin1'].spawnCreep([TOUGH,TOUGH,ATTACK, ATTACK, ATTACK, MOVE, MOVE, MOVE, MOVE,MOVE], ATTACK_NAME,
+                Game.spawns['ZhangLin1'].spawnCreep([TOUGH,TOUGH,TOUGH,TOUGH,TOUGH,ATTACK,ATTACK,ATTACK, ATTACK, ATTACK, MOVE,MOVE,MOVE,MOVE,MOVE,MOVE,MOVE, MOVE, MOVE, MOVE], ATTACK_NAME,
                     { memory: { role: 'attack' } });
             }
             var attackers = _.filter(Game.creeps, (creep) => creep.memory.role == 'attack');

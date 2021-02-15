@@ -35,3 +35,10 @@ module.exports = roleHarvester;
 
 
 
+// Game.market.createOrder({
+//     type: ORDER_BUY,
+//     resourceType: RESOURCE_ENERGY,
+//     price: 0.200,
+//     totalAmount: 180000,
+//     roomName: "E43N54"   
+// });
